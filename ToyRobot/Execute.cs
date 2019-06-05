@@ -3,6 +3,12 @@ using System.Text.RegularExpressions;
 
 namespace ToyRobot
 {
+    /* Execute class
+        Members: 
+            Table: The board the toy is placed
+            ToyMove: Movement of the toy, is of Movement class
+            ToyPlacedFlag - flag for the PLACE command to be issued */
+
     public class Execute
     {
         public Table Table = new Table(5, 5);
