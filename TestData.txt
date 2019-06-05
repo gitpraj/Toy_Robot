@@ -1,6 +1,6 @@
 ﻿TEST DATA to exercise the application.
 
-a)
+a) Check Place and move command
 
 PLACE 0,0,NORTH
 MOVE
@@ -8,7 +8,7 @@ REPORT
 
 Output: 0,1,NORTH
 
-b)
+b) Check Place and move command
 
 PLACE 0,0,NORTH
 LEFT
@@ -16,7 +16,7 @@ REPORT
 
 Output: 0,0,WEST
 
-c)
+c) Check Place and move command
 
 PLACE 1,2,EAST
 MOVE
@@ -37,7 +37,7 @@ REPORT
 Output: 1,1,SOUTH
 
 d) Invalid place direction:::
- 
+
 LEFT RIGHTLEFT
 PLACE 1,1,LOP
 RIGHT
@@ -71,7 +71,7 @@ REPORT
 
 Output: Not Placed
 
-g) No Place command 
+g) No Place command
 
 LEFT
 LEFT
