@@ -1,0 +1,158 @@
+﻿TEST DATA to exercise the application.
+
+a)
+
+PLACE 0,0,NORTH
+MOVE
+REPORT
+
+Output: 0,1,NORTH
+
+b)
+
+PLACE 0,0,NORTH
+LEFT
+REPORT
+
+Output: 0,0,WEST
+
+c)
+
+PLACE 1,2,EAST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+
+Output: 3,3,NORTH
+
+PLACE 3,2,WEST
+MOVE
+MOVE
+LEFT
+MOVE
+REPORT
+
+Output: 1,1,SOUTH
+
+d) Invalid place direction:::
+ 
+LEFT RIGHTLEFT
+PLACE 1,1,LOP
+RIGHT
+RIGHT
+MOVE
+MOVE
+MOVE
+REPORT
+
+Output: Not Placed
+
+e) Negative place coords
+
+PLACE -1,0,NORTH
+LEFT
+REPORT
+
+Output: Not Placed
+
+PLACE -1,-1,NORTH
+LEFT
+REPORT
+
+Output: Not Placed
+
+f) Place coords more than 4
+
+PLACE -1,0,1,NORTH
+LEFT
+REPORT
+
+Output: Not Placed
+
+g) No Place command 
+
+LEFT
+LEFT
+REPORT
+
+Output: Not Placed
+
+h) Mix and Match commands
+
+LEFT RIGHTLEFT
+PLACE 1,1,LOP
+RIGHT
+RIGHT
+MOVE
+MOVE
+MOVE
+PLACE 1,1,NORTH
+REPORT
+PLACE 1,1,SOUTH
+REPORT
+MOVE
+REPORT
+
+Output: 1,0,SOUTH
+
+i) Mix and Match commands with invalid commands
+
+LEFT RIGHTLEFT
+PLACE 1,1,LOP
+RIGHT
+JACK
+MOVE
+MOVE
+MOVE
+PLACE 1,1,NORTH
+REPORT
+PLACE 1,1,SOUTH
+REPORT
+MOVE
+REPORT
+
+Output: 1,0,SOUTH
+
+j) Invalid commands
+
+JACK
+JACK
+REPORT
+
+Output: Not Placed
+
+k) Robot to not fall of the board
+
+PLACE 0,0,SOUTH
+MOVE
+MOVE
+MOVE
+REPORT
+
+Output: 0,0,SOUTH
+
+PLACE 4,4,NORTH
+MOVE
+MOVE
+MOVE
+REPORT
+
+Output: 4,4,NORTH
+
+PLACE 0,3,WEST
+MOVE
+MOVE
+MOVE
+REPORT
+
+Output: 0,3,WEST
+
+PLACE 4,3,EAST
+MOVE
+MOVE
+MOVE
+REPORT
+
+Output: 4,3,EAST
