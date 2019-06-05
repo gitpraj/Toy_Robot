@@ -54,6 +54,11 @@ The toy robot must not fall off the table during movement. This also includes th
 
 Any move that would cause the robot to fall must be ignored.
 
+-----------------------------------------------------------------------------------------------------------
+How to run::
+Create a file with the commands in it. Pass the file name as the only argument when running the application.
+The output would be displayed on the console.
+-----------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------
 TEST Data that is exercised against the app is in TestData.txt
