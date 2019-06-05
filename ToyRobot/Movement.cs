@@ -30,8 +30,7 @@ namespace ToyRobot
                 {
                     if (TableTop.isValidDirection(direction.ToLower()))
                     {
-                        Toy = new Robot
-                        {
+                        Toy = new Robot {
                             direction = direction.ToLower(),
                             x = x,
                             y = y
